@@ -93,35 +93,47 @@ yarn dev
 
 ## Running Tests
 
-bash
+- **Unit tests only** (fast, no DB required)
 
-# Unit tests only (fast, no DB required)
+  ```bash
+  yarn test:unit
+  ```
 
-yarn test:unit
+- **Unit tests in watch mode** (re-runs on save)
 
-# Unit tests in watch mode (re-runs on save)
+  ```bash
+  yarn test:unit:watch
+  ```
 
-yarn test:unit:watch
+- **Unit tests with coverage report**
 
-# Unit tests with coverage report
+  ```bash
+  yarn test:unit:coverage
+  ```
 
-yarn test:unit:coverage
+- **Integration tests** (requires Docker running)
 
-# Integration tests (requires Docker running)
+  ```bash
+  yarn test:integration
+  ```
 
-yarn test:integration
+- **E2E tests** (requires Docker + dev server)
 
-# E2E tests (requires Docker + dev server)
+  ```bash
+  yarn test:e2e
+  ```
 
-yarn test:e2e
+- **E2E tests with browser visible**
 
-# E2E tests with browser visible
+  ```bash
+  yarn test:e2e:ui
+  ```
 
-yarn test:e2e:ui
+- **Run everything**
 
-# Run everything
-
-yarn test:all
+  ```bash
+  yarn test:all
+  ```
 
 ---
 
