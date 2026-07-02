@@ -7,11 +7,19 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "db:push": "drizzle-kit push",
+    "db:push:test": "cross-env DATABASE_URL=postgresql://taskuser:taskpass@localhost:5433/taskmanager_test drizzle-kit push"
   },
   "dependencies": {
     "nuxt": "^4.4.8",
     "vue": "^3.5.38",
     "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "cross-env": "^10.1.0",
+    "dotenv-cli": "^11.0.0",
+    "drizzle-kit": "^0.31.10"
   }
 }
