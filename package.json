@@ -12,10 +12,12 @@
     "db:push:test": "cross-env DATABASE_URL=postgresql://taskuser:taskpass@localhost:5433/taskmanager_test drizzle-kit push"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.11.3",
     "drizzle-orm": "^0.45.2",
     "nuxt": "^4.4.8",
     "nuxt-auth-utils": "^0.5.29",
     "pg": "^8.22.0",
+    "pinia": "^3.0.4",
     "vue": "^3.5.38",
     "vue-router": "^5.1.0",
     "zod": "^4.4.3"
