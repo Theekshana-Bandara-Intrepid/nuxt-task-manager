@@ -42,25 +42,6 @@ feature in this app exists to give something meaningful to test.
 
 ---
 
-## Project Structure
-
-├── server/
-│ ├── api/ # Nuxt API routes
-│ ├── db/ # Drizzle schema, connection, validators
-│ ├── services/ # Pure business logic (unit-testable)
-│ └── utils/ # Shared utilities
-├── app/
-│ ├── pages/
-│ ├── components/
-│ └── stores/ # Pinia stores
-└── tests/
-├── unit/ # Fast, no DB
-├── integration/ # Real HTTP + test DB
-├── e2e/ # Real browser (Playwright)
-└── helpers/ # Shared test utilities
-
----
-
 ## Local Setup
 
 ### Prerequisites
