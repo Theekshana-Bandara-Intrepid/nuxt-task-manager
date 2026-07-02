@@ -1,8 +1,7 @@
 // server/api/auth/register.post.ts
-import { useDb } from "~/server/db";
-import { users } from "~/server/db/schema";
-import { registerSchema } from "~/server/db/validators";
-import { hashPassword } from "~/server/utils/password";
+import { useDb } from "~~/server/db";
+import { users } from "~~/server/db/schema";
+import { registerSchema } from "~~/server/db/validators";
 
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);

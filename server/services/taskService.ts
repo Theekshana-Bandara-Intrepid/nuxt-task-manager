@@ -1,5 +1,5 @@
 // server/services/taskService.ts
-import type { Task } from "~/server/db/schema";
+import type { Task } from "~~/server/db/schema";
 
 export type Priority = "low" | "medium" | "high";
 

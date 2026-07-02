@@ -12,12 +12,17 @@
     "db:push:test": "cross-env DATABASE_URL=postgresql://taskuser:taskpass@localhost:5433/taskmanager_test drizzle-kit push"
   },
   "dependencies": {
+    "drizzle-orm": "^0.45.2",
     "nuxt": "^4.4.8",
+    "nuxt-auth-utils": "^0.5.29",
+    "pg": "^8.22.0",
     "vue": "^3.5.38",
-    "vue-router": "^5.1.0"
+    "vue-router": "^5.1.0",
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@types/node": "^26.1.0",
+    "@types/pg": "^8.20.0",
     "cross-env": "^10.1.0",
     "dotenv-cli": "^11.0.0",
     "drizzle-kit": "^0.31.10"

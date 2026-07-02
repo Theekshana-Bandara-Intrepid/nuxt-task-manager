@@ -1,6 +1,6 @@
 // server/api/tasks/[id].delete.ts  (DELETE /api/tasks/:id)
-import { useDb } from "~/server/db";
-import { tasks } from "~/server/db/schema";
+import { useDb } from "~~/server/db";
+import { tasks } from "~~/server/db/schema";
 import { eq, and } from "drizzle-orm";
 
 export default defineEventHandler(async (event) => {

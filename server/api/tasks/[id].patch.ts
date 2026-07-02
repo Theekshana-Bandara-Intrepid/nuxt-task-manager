@@ -1,7 +1,7 @@
 // server/api/tasks/[id].patch.ts  (PATCH /api/tasks/:id)
-import { useDb } from "~/server/db";
-import { tasks } from "~/server/db/schema";
-import { updateTaskSchema } from "~/server/db/validators";
+import { useDb } from "~~/server/db";
+import { tasks } from "~~/server/db/schema";
+import { updateTaskSchema } from "~~/server/db/validators";
 import { eq, and } from "drizzle-orm";
 
 export default defineEventHandler(async (event) => {

@@ -1,6 +1,6 @@
 // server/api/tasks/index.get.ts  (GET /api/tasks)
-import { useDb } from "~/server/db";
-import { tasks } from "~/server/db/schema";
+import { useDb } from "~~/server/db";
+import { tasks } from "~~/server/db/schema";
 import { eq, desc } from "drizzle-orm";
 
 export default defineEventHandler(async (event) => {

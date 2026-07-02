@@ -1,7 +1,7 @@
 // server/api/tasks/index.post.ts  (POST /api/tasks)
-import { useDb } from "~/server/db";
-import { tasks } from "~/server/db/schema";
-import { createTaskSchema } from "~/server/db/validators";
+import { useDb } from "~~/server/db";
+import { tasks } from "~~/server/db/schema";
+import { createTaskSchema } from "~~/server/db/validators";
 
 export default defineEventHandler(async (event) => {
   const session = await getUserSession(event);
