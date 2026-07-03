@@ -9,7 +9,14 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "db:push": "drizzle-kit push",
-    "db:push:test": "cross-env DATABASE_URL=postgresql://taskuser:taskpass@localhost:5433/taskmanager_test drizzle-kit push"
+    "db:push:test": "cross-env DATABASE_URL=postgresql://taskuser:taskpass@localhost:5433/taskmanager_test drizzle-kit push",
+    "test:unit": "vitest run --config vitest.unit.config.ts",
+    "test:unit:watch": "vitest --config vitest.unit.config.ts",
+    "test:unit:coverage": "vitest run --config vitest.unit.config.ts --coverage",
+    "test:integration": "vitest run --config vitest.integration.config.ts",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui",
+    "test:all": "yarn test:unit && yarn test:integration && yarn test:e2e"
   },
   "dependencies": {
     "@pinia/nuxt": "^0.11.3",
@@ -23,10 +30,14 @@
     "zod": "^4.4.3"
   },
   "devDependencies": {
+    "@nuxt/test-utils": "^4.0.3",
+    "@playwright/test": "^1.61.1",
     "@types/node": "^26.1.0",
     "@types/pg": "^8.20.0",
+    "@vitest/coverage-v8": "^4.1.9",
     "cross-env": "^10.1.0",
     "dotenv-cli": "^11.0.0",
-    "drizzle-kit": "^0.31.10"
+    "drizzle-kit": "^0.31.10",
+    "vitest": "^4.1.9"
   }
 }
